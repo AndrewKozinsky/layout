@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <!--<img src="/template.png" class="template" alt="" />-->
+      <section class="calc">
+        <div class="calc__left-side">
+          <div class="calc-table__head">
+            <div class="calc-table__header">
+              <div class="calc-table__row">
+                <span>Цена</span>
+                <span>Кол-во</span>
+              </div>
+            </div>
+            <div class="calc-table__subheader">
+              <div class="calc-table__row">
+                <span>(USTD)</span>
+                <span>(BTC)</span>
+              </div>
+            </div>
+          </div>
+          <div class="calc-table__body calc-table__body--red">
+            <div class="calc-table__row">
+              <span>39 553,48</span>
+              <span>0,00259</span>
+            </div>
+            <div class="calc-table__row">
+              <span>39 552,40</span>
+              <span>0,00952</span>
+            </div>
+            <div class="calc-table__row">
+              <span>39 552,11</span>
+              <span>0,05316</span>
+            </div>
+            <div class="calc-table__row">
+              <span>39 551,43</span>
+              <span>0,00500</span>
+            </div>
+            <div class="calc-table__row">
+              <span>39 551,31</span>
+              <span>0,17120</span>
+            </div>
+            <div class="calc-table__row">
+              <span>39 550,51</span>
+              <span>0,97566</span>
+            </div>
+          </div>
+
+          <div class="calc-table__info-block">
+            <p class="calc-table__info-block-top-text">39 550,50</p>
+            <p class="calc-table__info-block-bottom-text">≈ 39 550,50 $</p>
+          </div>
+
+          <div class="calc-table__body calc-table__body--green">
+            <div class="calc-table__row">
+              <span>39 553,48</span>
+              <span>0,00259</span>
+            </div>
+            <div class="calc-table__row">
+              <span>39 552,40</span>
+              <span>0,00952</span>
+            </div>
+            <div class="calc-table__row">
+              <span>39 552,11</span>
+              <span>0,05316</span>
+            </div>
+            <div class="calc-table__row">
+              <span>39 551,43</span>
+              <span>0,00500</span>
+            </div>
+            <div class="calc-table__row">
+              <span>39 551,31</span>
+              <span>0,17120</span>
+            </div>
+            <div class="calc-table__row">
+              <span>39 550,51</span>
+              <span>0,97566</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc__right-side">
+          <div class="calc-toggle__wrapper">
+            <div class="calc-toggle__button calc-toggle__button--selected">
+              Купить
+            </div>
+            <div class="calc-toggle__button">
+              Продать
+            </div>
+          </div>
+
+          <div class="calc-switch__switch">
+            <div class="calc-switch__item">
+              <div class="calc-switch__circle calc-switch__circle--selected"></div>
+              <span class="calc-switch__name">Лимитная</span>
+            </div>
+            <div class="calc-switch__item">
+              <div class="calc-switch__circle"></div>
+              <span class="calc-switch__name">Рыночная</span>
+            </div>
+          </div>
+
+          <div class="calc-text-input">
+            <div class="calc-text-input__button calc-text-input__button--minus"></div>
+            <div class="calc-text-input__input">1,0008</div>
+            <div class="calc-text-input__button calc-text-input__button--plus"></div>
+          </div>
+
+          <div class="calc-text-input">
+            <div class="calc-text-input__button calc-text-input__button--minus"></div>
+            <div class="calc-text-input__input calc-text-input__input--with-placeholder">Сумма BTC</div>
+            <div class="calc-text-input__button calc-text-input__button--plus"></div>
+          </div>
+
+          <div class="calc-divisions">
+            <div class="calc-divisions__item">
+              <div class="calc-divisions__rect"></div>
+              <span class="calc-divisions__text">25%</span>
+            </div>
+            <div class="calc-divisions__item">
+              <div class="calc-divisions__rect"></div>
+              <span class="calc-divisions__text">50%</span>
+            </div>
+            <div class="calc-divisions__item">
+              <div class="calc-divisions__rect"></div>
+              <span class="calc-divisions__text">75%</span>
+            </div>
+            <div class="calc-divisions__item">
+              <div class="calc-divisions__rect"></div>
+              <span class="calc-divisions__text">100%</span>
+            </div>
+          </div>
+
+
+          <div>
+            <div class="calc-text-input">
+              <div class="calc-text-input__input calc-text-input__input--with-placeholder">Всего (USDT)</div>
+            </div>
+            <div class="calc-fin-accessibility">
+              <span class="calc-fin-accessibility__name">Доступно</span>
+              <span class="calc-fin-accessibility__value">38 119,73219 USDT</span>
+            </div>
+          </div>
+
+
+          <button class="calc-submit">Купить BTC</button>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+:root {
+  /*Стандартный размер шрифта в браузере 16 пикселей.*/
+  /*Поэтому 10 пикселей будет 62.5%.*/
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: 'SFPro';
+  src: url('/font/SFProText-Light.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFPro';
+  src: url('/font/SFProText-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFPro';
+  src: url('/font/SFProText-Medium.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+*:not(svg, g, path) {
+  all: unset;
+  display: revert;
+  list-style: none;
+}
+
+html, body {
+  font-family: SFPro, sans-serif;
+  font-synthesis: none;
+  /*text-rendering: optimizeLegibility;*/
+  /*-webkit-font-smoothing: antialiased;*/
+  /*-moz-osx-font-smoothing: grayscale;*/
+  font-weight: 500;
+  color: rgba(4, 11, 17);
+  scrollbar-gutter: auto;
+}
+
+body {
+  padding: 3rem;
+  background: #f5f5f5;
+}
+
+#app {
+  position: relative;
+}
+
+.template {
+  position: absolute;
+  width: 375px;
+  opacity: .2;
+}
